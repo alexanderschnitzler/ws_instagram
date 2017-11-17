@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_instagram">
+		<header/>
+		<body>
+			<trans-unit id="extensionManager.clientId">
+				<source>Client ID</source>
+			</trans-unit>
+			<trans-unit id="extensionManager.clientSecret">
+				<source>Client Secret</source>
+			</trans-unit>
+			<trans-unit id="extensionManager.clientCallback">
+				<source>Client Callback</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

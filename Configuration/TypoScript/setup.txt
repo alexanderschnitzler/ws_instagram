@@ -1,0 +1,11 @@
+plugin.tx_wsinstagram {
+	view {
+		templateRootPaths.0 = {$plugin.tx_wsinstagram.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_wsinstagram.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_wsinstagram.view.layoutRootPath}
+	}
+	settings {
+		feedFile = {$plugin.tx_wsinstagram.settings.feedFile}
+		maxEntries = {$plugin.tx_wsinstagram.settings.maxEntries}
+	}
+}

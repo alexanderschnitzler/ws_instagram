@@ -1,0 +1,55 @@
+{namespace vhs=FluidTYPO3\Vhs\ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="main">
+
+	<h1>INSTAGRAM SHOW TEMPLATE</h1>
+	<h2>User</h2>
+	<div>
+		<p>Username: {instagram.user.data.username}</p>
+		<p>Website: <a href="{instagram.user.data.website}" target="_blank">{instagram.user.data.website}</a></p>
+		<p>Anzahl Medien: {instagram.user.data.counts.media}</p>
+		<p>Anzahl Followers: {instagram.user.data.counts.followed_by}</p>
+		<p>Link zum Profil: <a href="http://instagram.com/{instagram.user.data.username}" target="_blank">http://instagram.com/{instagram.user.data.username}</a></p>
+		<div>
+			<img src="{instagram.user.data.profile_picture}" title="{instagram.user.data.username}" alt="{instagram.user.data.username}" />
+		</div>
+	</div>
+
+	<h2>Media</h2>
+	<f:for each="{instagram.media.data}" iteration="mediaIteration" as="media">
+		<f:if condition="{mediaIteration.cycle} <= {maxEntries}">
+			<p>Likes: {media.likes.count}</p>
+			<p>Comments: {media.comments.count}</p>
+			<div>
+				<img src="{media.images.thumbnail.url}" title="{media.caption.text}" alt="{media.caption.text}" width="{media.images.thumbnail.width}" height="{media.images.thumbnail.height}" />
+			</div>
+			<div>
+				<img src="{media.images.low_resolution.url}" title="{media.caption.text}" alt="{media.caption.text}" width="{media.images.low_resolution.width}" height="{media.images.low_resolution.height}" />
+			</div>
+			<div>
+				<img src="{media.images.standard_resolution.url}" title="{media.caption.text}" alt="{media.caption.text}" width="{media.images.standard_resolution.width}" height="{media.images.standard_resolution.height}" />
+			</div>
+			<f:if condition="{media.videos.low_bandwidth.url}">
+				<video width="{media.videos.low_bandwidth.width}" height="{media.videos.low_bandwidth.height}" controls>
+					<source src="{media.videos.low_bandwidth.url}" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</f:if>
+			<f:if condition="{media.videos.standard_resolution.url}">
+				<video width="{media.videos.standard_resolution.width}" height="{media.videos.standard_resolution.height}" controls>
+					<source src="{media.videos.standard_resolution.url}" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</f:if>
+			<f:if condition="{media.videos.low_resolution.url}">
+				<video width="{media.videos.low_resolution.width}" height="{media.videos.low_resolution.height}" controls>
+					<source src="{media.videos.low_resolution.url}" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</f:if>
+		</f:if>
+	</f:for>
+
+</f:section>

@@ -1,0 +1,15 @@
+<p>Link</p>
+<p>{feedEntry.name}</p>
+<p>{feedEntry.text}</p>
+<p><f:format.date date="{feedEntry.date}" format="d.m.Y H:i" /></p>
+<p><a href="{feedEntry.link}" target="_blank">Post ansehen</a></p>
+<div>
+	<f:if condition="{feedEntry.image}">
+		<f:then>
+			<img src="{feedEntry.image}" width="200" title="{feedEntry.name}" />
+		</f:then>
+		<f:else>
+			Kein Bild
+		</f:else>
+	</f:if>
+</div>

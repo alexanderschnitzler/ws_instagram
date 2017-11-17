@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_instagram">
+		<header/>
+		<body>
+			<trans-unit id="wizicon.instagram.title">
+				<source>Instagram Feed</source>
+			</trans-unit>
+			<trans-unit id="wizicon.instagram.description">
+				<source>Place the plugin to display an instagram feed on the website.</source>
+			</trans-unit>
+            <trans-unit id="plugin.instagram">
+                <source>Instagram Feed</source>
+            </trans-unit>
+			<trans-unit id="plugin.instagram.flexform.sheets.settings">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="plugin.instagram.flexform.sheets.settings.override.templateFile">
+				<source>Alternative path to template file</source>
+			</trans-unit>
+			<trans-unit id="plugin.instagram.flexform.sheets.settings.override.feedFile">
+				<source>Path to JSON-File</source>
+			</trans-unit>
+			<trans-unit id="plugin.instagram.flexform.sheets.settings.override.maxEntries">
+				<source>Max of entries</source>
+			</trans-unit>
+			<trans-unit id="task.instagram.clientId">
+				<source>Client ID</source>
+			</trans-unit>
+			<trans-unit id="task.instagram.clientSecret">
+				<source>Client Secret</source>
+			</trans-unit>
+			<trans-unit id="task.instagram.clientName">
+				<source>Client Name</source>
+			</trans-unit>
+			<trans-unit id="task.instagram.accessToken">
+				<source>Access token</source>
+			</trans-unit>
+			<trans-unit id="task.instagram.localFolder">
+				<source>Local folder</source>
+			</trans-unit>
+			<trans-unit id="task.instagram.localFile">
+				<source>Local file</source>
+			</trans-unit>
+			<trans-unit id="task.instagram.title">
+				<source>Instagram - Feed</source>
+			</trans-unit>
+			<trans-unit id="task.instagram.description">
+				<source>Saves the data from the instagram api to a local file (somewhat of caching).</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

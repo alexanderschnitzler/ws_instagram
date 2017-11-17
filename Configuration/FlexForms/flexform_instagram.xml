@@ -1,0 +1,56 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+		<langChildren>0</langChildren>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:ws_instagram/Resources/Private/Language/locallang_db.xlf:plugin.instagram.flexform.sheets.settings</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.override.templateFile>
+						<TCEforms>
+							<label>LLL:EXT:ws_instagram/Resources/Private/Language/locallang_db.xlf:plugin.instagram.flexform.sheets.settings.override.templateFile</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<default></default>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</settings.override.templateFile>
+
+					<settings.override.feedFile>
+						<TCEforms>
+							<label>LLL:EXT:ws_instagram/Resources/Private/Language/locallang_db.xlf:plugin.instagram.flexform.sheets.settings.override.feedFile</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<default></default>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</settings.override.feedFile>
+
+					<settings.override.maxEntries>
+						<TCEforms>
+							<label>LLL:EXT:ws_instagram/Resources/Private/Language/locallang_db.xlf:plugin.instagram.flexform.sheets.settings.override.maxEntries</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<default></default>
+								<eval>trim,integer</eval>
+							</config>
+						</TCEforms>
+					</settings.override.maxEntries>
+
+				</el>
+			</ROOT>
+		</sDEF>
+		
+	</sheets>
+</T3DataStructure>

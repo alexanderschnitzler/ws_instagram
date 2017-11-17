@@ -1,0 +1,6 @@
+# cat=basic/enable/40; type=string; label=LLL:EXT:ws_instagram/Resources/Private/Language/locallang_be.xlf:extensionManager.clientId
+clientId =
+# cat=basic/enable/40; type=string; label=LLL:EXT:ws_instagram/Resources/Private/Language/locallang_be.xlf:extensionManager.clientSecret
+clientSecret =
+# cat=basic/enable/40; type=string; label=LLL:EXT:ws_instagram/Resources/Private/Language/locallang_be.xlf:extensionManager.clientCallback
+clientCallback = http://www.domain.tld/?eID=instagramCallback
